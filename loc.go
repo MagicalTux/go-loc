@@ -6,6 +6,7 @@ type Location struct {
 	Name     string
 	Lat, Lon float64
 	Parent   *Location
+	Depth    int
 }
 
 func (l *Location) Distance(l2 *Location) float64 {
